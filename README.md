@@ -1,52 +1,44 @@
-ExamCepe Manager
-Overview
-ExamCepe Manager is a web application built using Angular for the front-end and CodeIgniter for the back-end. This project aims to manage school and student data, including adding schools, editing school details, and tracking student results.
-Features
+# 🎓 ExamCepe Manager
 
-Add and manage school information (e.g., school number, designation, address).
-View and edit a list of schools and students.
-Display student results with admission status (Admis, Délibéré, Recalé).
-User-friendly interface with search functionality.
+**ExamCepe Manager** est une application web construite avec **Angular** pour le front-end et **CodeIgniter** pour le back-end. Elle permet de gérer les données des écoles et des élèves, notamment l’ajout, la modification, et la visualisation des résultats scolaires.
 
-Screenshots
-docs/screenshoot_3.png
-docs/screenshoot_2.png
-docs/screenshoot_1.png
+---
 
-Prerequisites
+## 🚀 Fonctionnalités
 
-Node.js and npm (for Angular)
-PHP (for CodeIgniter)
-Composer (for PHP dependencies)
-A web server (e.g., Apache or Nginx)
+- Ajouter et gérer les informations des écoles (numéro, désignation, adresse).
+- Consulter et éditer les listes d’écoles et d’élèves.
+- Afficher les résultats avec le statut d’admission :
+  - ✅ Admis
+  - ⚖️ Délibéré
+  - ❌ Recalé
+- Interface utilisateur conviviale avec recherche intégrée.
 
-Installation
-Back-end (CodeIgniter)
+---
 
-Navigate to the backend directory.
-Run composer install to install dependencies.
-Configure the database in application/config/database.php.
-Set up your web server to point to the backend directory.
+## 📸 Captures d’écran
 
-Front-end (Angular)
+<p align="center">
+  <img src="docs/screenshoot_3.png" alt="Capture 3" width="600"><br>
+  <img src="docs/screenshoot_2.png" alt="Capture 2" width="600"><br>
+  <img src="docs/screenshoot_1.png" alt="Capture 1" width="600">
+</p>
 
-Navigate to the frontend directory.
-Run npm install to install dependencies.
-Run ng serve to start the development server (http://localhost:4200).
+---
 
-Usage
+## 🛠️ Prérequis
 
-Add a new school by navigating to the "École" section and clicking "Ajouter une école".
-Edit or delete existing schools via the "Éditer l'école" or "Supprimer l'école" options.
-View student results under the "Résultat" section, with filters for admission status.
+- [Node.js](https://nodejs.org/) et `npm` (pour Angular)
+- [PHP](https://www.php.net/)
+- [Composer](https://getcomposer.org/) (pour les dépendances PHP)
+- Serveur web local (Apache ou Nginx recommandé)
 
-Contributing
+---
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Commit your changes (git commit -m "Add new feature").
-Push to the branch (git push origin feature-branch).
-Open a pull request.
+## ⚙️ Installation
 
-License
-This project is licensed under the MIT License.
+### 🔧 Back-end (CodeIgniter)
+
+```bash
+cd backend/
+composer install
