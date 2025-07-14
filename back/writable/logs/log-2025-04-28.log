@@ -1,0 +1,558 @@
+ERROR - 2025-04-28 05:35:38 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:38 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:35:38 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:38 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:35:38 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:38 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:35:43 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:43 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:35:43 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:43 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:35:43 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:43 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:35:43 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:43 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:35:44 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:44 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:35:44 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:44 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:35:45 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:45 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:35:45 --> mysqli_sql_exception: Unknown column 'design' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(68): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(205): App\Models\EleveModel->getElevesPaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:35:45 --> Erreur dans getEcoles: Unknown column 'design' in 'where clause'
+ERROR - 2025-04-28 05:49:46 --> mysqli_sql_exception: Unknown column 'numEcole' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(81): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(490): App\Models\NoteModel->getNotePaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getNotes()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:49:46 --> Erreur dans getEcoles: Unknown column 'numEcole' in 'where clause'
+ERROR - 2025-04-28 05:51:48 --> mysqli_sql_exception: Unknown column 'anneesScolaire' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(81): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(491): App\Models\NoteModel->getNotePaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getNotes()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:51:48 --> Erreur dans getEcoles: Unknown column 'anneesScolaire' in 'where clause'
+ERROR - 2025-04-28 05:52:21 --> mysqli_sql_exception: Unknown column 'anneesScolaire' in 'where clause' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(81): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(491): App\Models\NoteModel->getNotePaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getNotes()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-04-28 05:52:21 --> Erreur dans getEcoles: Unknown column 'anneesScolaire' in 'where clause'
+CRITICAL - 2025-04-28 06:57:39 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: api/result]
+in APPPATH/Controllers/ApiController.php on line 623.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-28 06:58:36 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: api/result]
+in APPPATH/Controllers/ApiController.php on line 623.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-28 06:59:22 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: api/result]
+in APPPATH/Controllers/ApiController.php on line 623.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+ERROR - 2025-04-28 07:34:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 07:34:55 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-04-28 07:34:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 07:34:55 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-04-28 07:34:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 07:34:56 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-04-28 07:34:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 07:34:56 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-04-28 07:35:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 07:35:10 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-04-28 07:35:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 07:35:11 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-04-28 07:35:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 07:35:12 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-04-28 07:35:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 07:35:12 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-04-28 07:42:54 --> mysqli_sql_exception: Table 'NOTE' already exists in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Database/Migrations/2025-04-28-074240_Note.php(20): CodeIgniter\Database\Forge->createTable()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(866): App\Database\Migrations\Note->up()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+ERROR - 2025-04-28 11:37:30 --> mysqli_sql_exception: Duplicate column name 'numEcole' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(658): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 11:37:30 --> Erreur dans getResults: Duplicate column name 'numEcole'
+ERROR - 2025-04-28 11:37:31 --> mysqli_sql_exception: Duplicate column name 'numEcole' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(658): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 11:37:31 --> Erreur dans getResults: Duplicate column name 'numEcole'
+ERROR - 2025-04-28 11:38:45 --> mysqli_sql_exception: Duplicate column name 'numEcole' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(658): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-04-28 11:38:45 --> Erreur dans getResults: Duplicate column name 'numEcole'
+CRITICAL - 2025-04-28 11:54:47 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php on line 110
+[Method: POST, Route: api/result]
+in SYSTEMPATH/Database/BaseBuilder.php on line 1008.
+ 1 APPPATH/Models/EleveModel.php(110): CodeIgniter\Database\BaseBuilder->like()
+ 2 APPPATH/Controllers/ApiController.php(651): App\Models\EleveModel->getResults()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-28 11:54:48 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php on line 110
+[Method: POST, Route: api/result]
+in SYSTEMPATH/Database/BaseBuilder.php on line 1008.
+ 1 APPPATH/Models/EleveModel.php(110): CodeIgniter\Database\BaseBuilder->like()
+ 2 APPPATH/Controllers/ApiController.php(651): App\Models\EleveModel->getResults()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-28 11:59:19 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+[Method: POST, Route: api/result]
+in APPPATH/Controllers/ApiController.php on line 652.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-28 11:59:21 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+[Method: POST, Route: api/result]
+in APPPATH/Controllers/ApiController.php on line 652.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+ERROR - 2025-04-28 11:59:43 --> Erreur dans getEcoles: Undefined array key "moyenne"
+CRITICAL - 2025-04-28 12:00:01 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+[Method: POST, Route: api/result]
+in APPPATH/Controllers/ApiController.php on line 641.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-28 12:01:43 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+[Method: POST, Route: api/result]
+in APPPATH/Controllers/ApiController.php on line 641.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getResults()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+ERROR - 2025-04-28 12:02:08 --> Erreur dans getEcoles: Undefined variable $eleves
+ERROR - 2025-04-28 12:02:09 --> Erreur dans getEcoles: Undefined variable $eleves
+ERROR - 2025-04-28 12:02:16 --> Erreur dans getEcoles: Undefined array key "moyenne"
+ERROR - 2025-04-28 12:02:19 --> Erreur dans getEcoles: Undefined array key "moyenne"
+ERROR - 2025-04-28 12:02:21 --> Erreur dans getEcoles: Undefined array key "moyenne"

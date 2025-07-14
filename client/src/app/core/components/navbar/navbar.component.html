@@ -1,0 +1,95 @@
+<nav>
+  <span
+    class="absolute text-white text-4xl top-5 left-4 cursor-pointer"
+    (click)="openSidebar()"
+  >
+    <i class="fa-solid fa-bars py-3 px-4 bg-gray-900 rounded-full"></i>
+  </span>
+  <div
+    class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-96 overflow-y-auto text-center bg-gray-900 shadow-md shadow-gray-950 z-10"
+  >
+    <div class="text-gray-100 text-xl">
+      <div class="p-2.5 mt-1 flex items-center cursor-pointer">
+        <!-- <i class="fa-solid fa-circle-dot px-2 py-1 rounded-md bg-blue-600" [routerLink]="['/accueil']"></i> -->
+        <img src="favicon.png" alt="examCepe manager icon" class="max-h-8">
+        <h1 class="font-bold text-gray-200 text-[15px] ml-3" [routerLink]="['/accueil']">examCepe manager</h1>
+        <i
+          class="fa-solid fa-close cursor-pointer ml-28 lg:hidden"
+          (click)="openSidebar()"
+        ></i>
+      </div>
+      <div class="my-2 bg-gray-600 h-[1px]"></div>
+    </div>
+    <div
+      class="p-2.5 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700 text-white"
+    >
+      <i class="fa-solid fa-search text-sm"></i>
+      <input
+        type="text"
+        placeholder="Search"
+        class="text-[15px] ml-4 w-full bg-transparent focus:outline-none"
+      />
+    </div>
+    <a
+      [ngClass]="accueil ? 'bg-blue-600' : ''"
+      [routerLink]="['/accueil']"
+      class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+    >
+      <i class="fa-solid fa-home"></i>
+      <span class="text-[15px] ml-4 text-gray-200 font-bold">Accueil</span>
+    </a>
+    <a
+      [ngClass]="resultat ? 'bg-blue-600' : ''"
+      [routerLink]="['/resultat']"
+      class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+    >
+      <i class="fa-solid fa-file-alt"></i>
+      <span class="text-[15px] ml-4 text-gray-200 font-bold">Resultat</span>
+    </a>
+    <div
+      class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+      (click)="dropdown('#adminMenu', '#adminArrow')"
+    >
+      <i class="fa-solid fa-sliders-h"></i>
+      <div class="flex justify-between w-full items-center">
+        <span class="text-[15px] ml-4 text-gray-200 font-bold">Administration</span>
+        <span class="text-sm rotate-180" id="adminArrow">
+          <i class="fa-solid fa-chevron-down"></i>
+        </span>
+      </div>
+    </div>
+    <div
+      class="text-left text-base mt-2  w-4/5 mx-auto text-gray-200 font-bold"
+      id="adminMenu"
+    >
+      <div class="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1" [ngClass]="adminEcole ? 'bg-blue-600' : ''" [routerLink]="['/administration/ecole']">
+        <a><i class="fa-solid fa-school"></i><span class="text-[15px] ml-4 text-gray-200 font-bold">Ecole</span></a>
+      </div>
+      <div class="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1" [ngClass]="adminEleve ? 'bg-blue-600' : ''" [routerLink]="['/administration/eleve']">
+        <a ><i class="fa-solid fa-user"></i><span class="text-[15px] ml-4 text-gray-200 font-bold">Eleve</span></a>
+      </div>
+      <div class="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1" [ngClass]="adminMatiere ? 'bg-blue-600' : ''" [routerLink]="['/administration/matiere']">
+        <a ><i class="fa-solid fa-book"></i><span class="text-[15px] ml-4 text-gray-200 font-bold">Matiere</span></a>
+      </div>
+      <div class="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1" [ngClass]="adminNote ? 'bg-blue-600' : ''" [routerLink]="['/administration/note']">
+        <a ><i class="fa-solid fa-chart-line"></i><span class="text-[15px] ml-4 text-gray-200 font-bold">Note</span></a>
+      </div>
+    </div>
+    <!-- <div
+      class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+    >
+      <i class="fa-solid fa-bookmark"></i>
+      <span class="text-[15px] ml-4 text-gray-200 font-bold">Bookmark</span>
+    </div> -->
+
+    <!-- <div class="my-4 bg-gray-600 h-[1px]"></div> -->
+
+
+    <!-- <div
+      class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+    >
+      <i class="fa-solid fa-right-to-bracket"></i>
+      <span class="text-[15px] ml-4 text-gray-200 font-bold">Logout</span>
+    </div> -->
+  </div>
+</nav>

@@ -1,0 +1,41 @@
+ERROR - 2025-03-24 20:18:10 --> mysqli_sql_exception: Duplicate entry '006' for key 'ECOLE.PRIMARY' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(839): CodeIgniter\Model->doInsert()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(60): CodeIgniter\Model->insert()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createEcole()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-03-24 20:18:10 --> Exception : Duplicate entry '006' for key 'ECOLE.PRIMARY'
+CRITICAL - 2025-03-24 20:40:38 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "{{fzefz}}"
+[Method: GET, Route: api/ecole/delete/%7B%7Bfzefz%7D%7D]
+in SYSTEMPATH/Router/Router.php on line 739.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-24 20:41:28 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "$fzef"
+[Method: GET, Route: api/ecole/delete/$fzef]
+in SYSTEMPATH/Router/Router.php on line 739.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')

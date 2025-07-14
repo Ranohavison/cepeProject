@@ -1,0 +1,44 @@
+CRITICAL - 2025-03-23 04:45:20 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: api/ecole/getAll]
+in APPPATH/Controllers/ApiController.php on line 29.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(885): class_exists()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-23 04:45:25 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: api/ecole/getAll]
+in APPPATH/Controllers/ApiController.php on line 29.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(885): class_exists()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-23 04:50:01 --> Error: Call to a member function find() on array
+[Method: GET, Route: api/ecole/getAll]
+in APPPATH/Controllers/ApiController.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getEcoles()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-23 04:50:02 --> Error: Call to a member function find() on array
+[Method: GET, Route: api/ecole/getAll]
+in APPPATH/Controllers/ApiController.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getEcoles()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')

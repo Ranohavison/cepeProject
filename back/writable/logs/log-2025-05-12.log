@@ -1,0 +1,123 @@
+CRITICAL - 2025-05-12 06:58:38 --> ErrorException: Array to string conversion
+[Method: GET, Route: api/bulletin/001]
+in APPPATH/Controllers/ApiController.php on line 799.
+ 1 APPPATH/Controllers/ApiController.php(799): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+ERROR - 2025-05-12 12:19:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-05-12 12:19:35 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-05-12 12:19:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-05-12 12:19:38 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-05-12 12:19:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-05-12 12:19:39 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-05-12 12:19:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-05-12 12:19:39 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-05-12 12:19:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-05-12 12:19:39 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-05-12 12:19:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-05-12 12:19:40 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR - 2025-05-12 12:19:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/NoteModel.php(54): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(532): App\Models\NoteModel->insert_note()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createNote()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#12 {main}
+ERROR - 2025-05-12 12:19:40 --> Erreur lors de l'insertion : Cannot add or update a child row: a foreign key constraint fails (`cepeCodeigniter`.`NOTE`, CONSTRAINT `NOTE_numEleve_foreign` FOREIGN KEY (`numEleve`) REFERENCES `ELEVE` (`numEleve`) ON DELETE CASCADE ON UPDATE CASCADE)

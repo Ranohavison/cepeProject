@@ -1,0 +1,253 @@
+CRITICAL - 2025-03-25 03:31:53 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "$fzef"
+[Method: GET, Route: api/ecole/delete/$fzef]
+in SYSTEMPATH/Router/Router.php on line 739.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 03:32:52 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "'4'"
+[Method: GET, Route: api/ecole/delete/%274%27]
+in SYSTEMPATH/Router/Router.php on line 739.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 03:37:18 --> ArgumentCountError: Too few arguments to function App\Controllers\ApiController::deleteEcole(), 0 passed in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: api/ecole]
+in APPPATH/Controllers/ApiController.php on line 74.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->deleteEcole()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 03:37:19 --> ArgumentCountError: Too few arguments to function App\Controllers\ApiController::deleteEcole(), 0 passed in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: api/ecole]
+in APPPATH/Controllers/ApiController.php on line 74.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->deleteEcole()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+ERROR - 2025-03-25 08:24:09 --> mysqli_sql_exception: Duplicate entry '001' for key 'ECOLE.PRIMARY' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1027): CodeIgniter\Model->doUpdate()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(863): CodeIgniter\BaseModel->update()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(229): CodeIgniter\Model->update()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->updateEleve()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2025-03-25 08:24:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '001' for key 'ECOLE.PRIMARY'
+[Method: PUT, Route: api/eleve/update/002]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Controllers/ApiController.php(229): CodeIgniter\Model->update()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->updateEleve()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 08:24:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '001' for key 'ECOLE.PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Controllers/ApiController.php(229): CodeIgniter\Model->update()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->updateEleve()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 08:24:09 --> [Caused by] mysqli_sql_exception: Duplicate entry '001' for key 'ECOLE.PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Controllers/ApiController.php(229): CodeIgniter\Model->update()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->updateEleve()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+ERROR - 2025-03-25 08:25:00 --> mysqli_sql_exception: Duplicate entry '002' for key 'ECOLE.PRIMARY' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1027): CodeIgniter\Model->doUpdate()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(863): CodeIgniter\BaseModel->update()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(229): CodeIgniter\Model->update()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->updateEleve()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2025-03-25 08:25:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '002' for key 'ECOLE.PRIMARY'
+[Method: PUT, Route: api/eleve/update/004]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Controllers/ApiController.php(229): CodeIgniter\Model->update()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->updateEleve()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 08:25:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '002' for key 'ECOLE.PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Controllers/ApiController.php(229): CodeIgniter\Model->update()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->updateEleve()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 08:25:00 --> [Caused by] mysqli_sql_exception: Duplicate entry '002' for key 'ECOLE.PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Controllers/ApiController.php(229): CodeIgniter\Model->update()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->updateEleve()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 08:44:16 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: api/eleve/getAll]
+in APPPATH/Models/EleveModel.php on line 63.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 APPPATH/Controllers/ApiController.php(155): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 08:44:17 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: api/eleve/getAll]
+in APPPATH/Models/EleveModel.php on line 63.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 APPPATH/Controllers/ApiController.php(155): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 08:44:28 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: api/eleve/getAll]
+in APPPATH/Models/EleveModel.php on line 63.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 APPPATH/Controllers/ApiController.php(155): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 08:44:29 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: api/eleve/getAll]
+in APPPATH/Models/EleveModel.php on line 63.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 APPPATH/Controllers/ApiController.php(155): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-03-25 08:44:36 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: api/eleve/getAll]
+in APPPATH/Models/EleveModel.php on line 63.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 APPPATH/Controllers/ApiController.php(155): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->getEleves()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+ERROR - 2025-03-25 09:30:49 --> mysqli_sql_exception: Duplicate entry '004' for key 'ECOLE.PRIMARY' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(839): CodeIgniter\Model->doInsert()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(60): CodeIgniter\Model->insert()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createEcole()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+ERROR - 2025-03-25 09:30:49 --> Exception : Duplicate entry '004' for key 'ECOLE.PRIMARY'

@@ -1,0 +1,217 @@
+<div [@pageAnimations]="isLoaded ? 'loaded' : ''">
+  <div
+   class="animated-element"
+    class="fixed top-0 bottom-0 lg:left-96 p-2 w-96 overflow-y-auto text-center bg-gray-900"
+  >
+    <div class="text-gray-100 text-xl">
+      <div class="p-3 mt-1 flex items-center cursor-pointer">
+        <h1 class="font-bold text-gray-200 text-[15px] ml-3">Administration</h1>
+      </div>
+      <div class="my-2 bg-gray-600 h-[1px]"></div>
+    </div>
+
+    <a
+      class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+      (click)="addMode()"
+    >
+      <i class="fa-solid fa-add"></i>
+      <span class="text-[15px] ml-4 text-gray-200 font-bold"
+        >Ajouter une école</span
+      >
+    </a>
+    <div *ngIf="selectedItem">
+      <a
+        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+        (click)="edit()"
+      >
+        <i class="fa-solid fa-edit"></i>
+        <span class="text-[15px] ml-4 text-gray-200 font-bold"
+          >Editer l'école</span
+        >
+      </a>
+      <a
+        (click)="deleteItem()" 
+        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+      >
+        <i class="fa-solid fa-remove"></i>
+        <span class="text-[15px] ml-4 text-gray-200 font-bold"
+          >Suprimer l'école</span
+        >
+      </a>
+    </div>
+    <div class="my-2 bg-gray-600 h-[1px]"></div>
+    <div
+      class="p-2.5 flex items-center rounded-md px-4 my-5 duration-300 cursor-pointer bg-gray-700 text-white"
+    >
+      <i class="fa-solid fa-search text-sm" (click)="search(searchInput.value)"></i>
+      <input
+        #searchInput
+        type="text"
+        placeholder="Search"
+        class="text-[15px] ml-4 w-full bg-transparent focus:outline-none"
+      />
+    </div>
+
+    <!-- <div class="my-2 bg-gray-600 h-[1px]"></div> -->
+
+    <!-- <div *ngIf="!selectedItem">
+      <p>Aucun élément sélectionné.</p>
+    </div> -->
+  </div>
+
+  <div class="relative animated-element">
+    <div class="absolute right-0 lg:w-[66rem] p-5 h-screen">
+      <div class="flex flex-row text-white">
+        <div
+          class="relative bg-gray-900 rounded-lg shadow-sm shadow-gray-950 me-5 min-w-[49%] p-6"
+        >
+          <p class="font-semibold uppercase mb-3">
+            Ecoles <i class="fa-solid fa-circle-info ml-2"></i>
+          </p>
+          <p class="font-semibold text-2xl uppercase mb">
+            {{ pagination.total }}
+          </p>
+          <small>ecoles enregistrée</small>
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg shadow-sm shadow-gray-950 min-w-[49%] p-6"
+        >
+          <p class="font-semibold uppercase mb-3">
+            Eleves <i class="fa-solid fa-circle-info ml-2"></i>
+          </p>
+          <p class="font-semibold text-2xl uppercase mb" *ngIf="selectedItem">
+            {{ selectedItem.nbrEleves ?? 0 }}
+          </p>
+          <p class="font-semibold text-2xl uppercase mb" *ngIf="!selectedItem">
+            0
+          </p>
+          <small>élèves inscrit à cette école</small>
+        </div>
+      </div>
+      <div class="bg-gray-900 rounded-xl shadow-sm shadow-gray-950 my-4">
+        <app-table-crud [columns]="columns" [data]="data"></app-table-crud>
+      </div>
+    </div>
+  </div>
+
+  <div class="animated-element">
+    <div
+      [@slide]="position"
+      class="fixed top-0 bottom-0 lg:-left-64 sm:left-0 py-3 px-10 w-[40rem] overflow-y-auto text-center bg-gray-900 text-white z-0"
+    >
+      <div class="text-gray-100 text-xl">
+        <div class="p-2.5 flex items-center mb-8">
+          <h1 class="font-bold text-gray-200 text-[15px] mx-auto">
+            Ajouter une école
+          </h1>
+          <i
+            class="fa-solid fa-close cursor-pointer p-3"
+            (click)="initForm()"
+          ></i>
+        </div>
+        <div class="my-4 bg-gray-600 h-[1px]"></div>
+      </div>
+
+      <form
+        [formGroup]="addForm"
+        (ngSubmit)="onSubmit($event)"
+        autoComplete="off"
+        class="w-full max-w-[600px] bg-gray-900 rounded-lg shadow"
+        aria-label="create-ecole"
+      >
+        <div class="flex flex-col items-start mb-5 gap-y-3">
+          <label htmlFor="numEcole" class="text-sm font-medium cursor-pointer">
+            Numéro
+          </label>
+          <input
+            formControlName="numEcole"
+            type="text"
+            id="numEcole"
+            name="numEcole"
+            placeholder="Entrez le numéro de l'école."
+            class="w-full p-4 bg-transparent border border-gray-200 rounded-lg outline-none hover:border-blue-400 focus:border-blue-500 focus:text-blue-500"
+            required
+          />
+          <div
+            *ngIf="numEcole && numEcole.invalid && numEcole.touched"
+            class="text-red-600 text-sm mt-1"
+          >
+            <div *ngIf="numEcole.errors?.['required']">
+              numEcole is required.
+            </div>
+            <div *ngIf="numEcole.errors?.['minlength']">
+              numEcole must be at least 3 characters long.
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start mb-5 gap-y-3">
+          <label htmlFor="design" class="text-sm font-medium cursor-pointer">
+            Désignation
+          </label>
+          <input
+            formControlName="design"
+            type="text"
+            id="design"
+            name="design"
+            placeholder="Entrez la désignation de l'école ici."
+            class="w-full p-4 bg-transparent border border-gray-200 focus:border-blue-500 focus:text-blue-500 rounded-lg outline-none"
+            required
+          />
+          <div
+            *ngIf="design && design.invalid && design.touched"
+            class="text-red-600 text-sm mt-1"
+          >
+            <div *ngIf="design.errors?.['required']">design is required.</div>
+            <div *ngIf="design.errors?.['minlength']">
+              design must be at least 4 characters long.
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start mb-5 gap-y-3">
+          <label htmlFor="adresse" class="text-sm font-medium cursor-pointer">
+            Adresse
+          </label>
+          <input
+            formControlName="adresse"
+            type="text"
+            id="adresse"
+            name="adresse"
+            placeholder="Entrez l'adresse de l'école ici."
+            class="w-full p-4 bg-transparent border border-gray-200 focus:border-blue-500 focus:text-blue-500 rounded-lg outline-none"
+            required
+          />
+          <div
+            *ngIf="adresse && adresse.invalid && adresse.touched"
+            class="text-red-600 text-sm mt-1"
+          >
+            <div *ngIf="adresse.errors?.['required']">adresse is required.</div>
+            <div *ngIf="adresse.errors?.['minlength']">
+              adresse must be at least 6 characters long.
+            </div>
+          </div>
+        </div>
+
+        <div class="my-4 bg-gray-600 h-[1px]"></div>
+
+        <div class="w-full mt-8">
+          <button
+            type="button"
+            (click)="initForm()"
+            class="inline-flex items-center justify-center px-8 w-[49%] me-1 font-sans font-semibold tracking-wide text-white bg-gray-600 hover:bg-gray-700 rounded-lg h-16"
+          >
+            Anuler
+          </button>
+          <button
+            type="submit"
+            [disabled]="addForm.invalid"
+            class="inline-flex items-center justify-center px-8 w-[49%] ml-1 font-sans font-semibold tracking-wide text-white bg-blue-600 hover:bg-blue-700 disabled:opacity-50 rounded-lg h-16"
+          >
+            Ajouter
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

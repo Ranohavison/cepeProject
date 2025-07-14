@@ -1,0 +1,358 @@
+CRITICAL - 2025-04-10 14:33:07 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/CodeIgniter.php on line 189.
+ 1 SYSTEMPATH/Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark()
+CRITICAL - 2025-04-10 14:33:09 --> ErrorException: Uncaught Error: Class "Locale" not found in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/I18n/TimeTrait.php:76
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/I18n/TimeTrait.php(117): CodeIgniter\I18n\Time->__construct()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(398): CodeIgniter\I18n\Time::now()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(376): CodeIgniter\HTTP\Response->sendHeaders()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Debug/ExceptionHandler.php(85): CodeIgniter\HTTP\Response->send()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Debug/Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/spark(84): CodeIgniter\Boot::bootSpark()
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH/I18n/TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-10 14:33:28 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/CodeIgniter.php on line 189.
+ 1 SYSTEMPATH/Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark()
+CRITICAL - 2025-04-10 14:33:28 --> ErrorException: Uncaught Error: Class "Locale" not found in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/I18n/TimeTrait.php:76
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/I18n/TimeTrait.php(117): CodeIgniter\I18n\Time->__construct()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(398): CodeIgniter\I18n\Time::now()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(376): CodeIgniter\HTTP\Response->sendHeaders()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Debug/ExceptionHandler.php(85): CodeIgniter\HTTP\Response->send()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Debug/Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/spark(84): CodeIgniter\Boot::bootSpark()
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH/I18n/TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2025-04-10 14:36:15 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EcoleModel.php(45): CodeIgniter\BaseModel->paginate()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(37): App\Models\EcoleModel->getEcolePaginated()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEcoles()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(1283): CodeIgniter\Model->countAllResults()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EcoleModel.php(45): CodeIgniter\BaseModel->paginate()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(37): App\Models\EcoleModel->getEcolePaginated()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->getEcoles()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+ERROR - 2025-04-10 14:36:15 --> Erreur dans getEcoles: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+ERROR - 2025-04-10 14:36:25 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(839): CodeIgniter\Model->doInsert()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(92): CodeIgniter\Model->insert()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createEcole()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(839): CodeIgniter\Model->doInsert()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(92): CodeIgniter\Model->insert()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createEcole()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+ERROR - 2025-04-10 14:36:25 --> Exception : Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+ERROR - 2025-04-10 14:36:26 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(839): CodeIgniter\Model->doInsert()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(92): CodeIgniter\Model->insert()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createEcole()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(839): CodeIgniter\Model->doInsert()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(92): CodeIgniter\Model->insert()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createEcole()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+ERROR - 2025-04-10 14:36:26 --> Exception : Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+ERROR - 2025-04-10 14:36:26 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(839): CodeIgniter\Model->doInsert()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(92): CodeIgniter\Model->insert()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createEcole()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#14 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/BaseModel.php(839): CodeIgniter\Model->doInsert()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(92): CodeIgniter\Model->insert()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->createEcole()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#13 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+ERROR - 2025-04-10 14:36:26 --> Exception : Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+CRITICAL - 2025-04-10 14:58:18 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\EleveModel::get_notes_by_eleve
+[Method: GET, Route: api/bulletin/001]
+in SYSTEMPATH/Model.php on line 930.
+ 1 APPPATH/Controllers/ApiController.php(577): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+ERROR - 2025-04-10 14:59:42 --> mysqli_sql_exception: Not unique table/alias: 'NOTE' in /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Models/EleveModel.php(64): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/app/Controllers/ApiController.php(577): App\Models\EleveModel->get_notes_by_eleve()
+#6 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+#7 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php(66): CodeIgniter\Boot::bootWeb()
+#12 /home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-04-10 14:59:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'NOTE'
+[Method: GET, Route: api/bulletin/001]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/EleveModel.php(64): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/ApiController.php(577): App\Models\EleveModel->get_notes_by_eleve()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-10 14:59:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'NOTE'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/EleveModel.php(64): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/ApiController.php(577): App\Models\EleveModel->get_notes_by_eleve()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-10 14:59:42 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'NOTE'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/EleveModel.php(64): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/ApiController.php(577): App\Models\EleveModel->get_notes_by_eleve()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-10 15:05:00 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: api/bulletin/001]
+in APPPATH/Controllers/ApiController.php on line 584.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-10 15:08:38 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: api/bulletin/001]
+in APPPATH/Controllers/ApiController.php on line 584.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-10 15:09:22 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: api/bulletin/001]
+in APPPATH/Controllers/ApiController.php on line 596.
+ 1 APPPATH/Controllers/ApiController.php(596): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-10 15:10:26 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: api/bulletin/001]
+in APPPATH/Controllers/ApiController.php on line 598.
+ 1 APPPATH/Controllers/ApiController.php(598): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-10 15:12:01 --> Error: Cannot use [] for reading
+[Method: GET, Route: api/bulletin/001]
+in APPPATH/Controllers/ApiController.php on line 583.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-10 15:15:28 --> ErrorException: Undefined array key "date_naissance"
+[Method: GET, Route: api/bulletin/001]
+in APPPATH/Controllers/ApiController.php on line 610.
+ 1 APPPATH/Controllers/ApiController.php(610): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-10 15:16:07 --> ErrorException: Undefined array key "dateNaiss"
+[Method: GET, Route: api/bulletin/001]
+in APPPATH/Controllers/ApiController.php on line 608.
+ 1 APPPATH/Controllers/ApiController.php(608): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')
+CRITICAL - 2025-04-10 15:17:06 --> ErrorException: Undefined array key "design"
+[Method: GET, Route: api/bulletin/001]
+in APPPATH/Controllers/ApiController.php on line 609.
+ 1 APPPATH/Controllers/ApiController.php(609): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->generatePdf()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mandresy-ranohavison/Documents/Projets/php/cepeProject/back/public/index.php')

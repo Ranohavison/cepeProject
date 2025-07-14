@@ -1,0 +1,72 @@
+<div class="p-4">
+  <div class="flex flex-row text-white mb-5">
+    <div
+      class="relative bg-gray-900 rounded-lg shadow-sm shadow-gray-950 me-4 min-w-[24.1%] p-6"
+    >
+      <p class="font-semibold uppercase mb-3">
+        6 eme<i class="fa-solid fa-circle-info ml-2"></i>
+      </p>
+      <p class="font-semibold text-2xl uppercase mb">
+        {{ numberPerMention.sixieme }}
+      </p>
+      <small>élèves admis en 6 ème</small>
+    </div>
+    <div
+      class="bg-gray-900 rounded-lg shadow-sm shadow-gray-950 me-4 min-w-[24.1%] p-6"
+    >
+      <p class="font-semibold uppercase mb-3">
+        admis <i class="fa-solid fa-circle-info ml-2"></i>
+      </p>
+      <p class="font-semibold text-2xl uppercase mb">
+        {{ numberPerMention.admis }}
+      </p>
+      <small>élèves admis</small>
+    </div>
+    <div
+      class="bg-gray-900 rounded-lg shadow-sm shadow-gra me-4 min-w-[24.1%] p-6"
+    >
+      <p class="font-semibold uppercase mb-3">
+        déliberé <i class="fa-solid fa-circle-info ml-2"></i>
+      </p>
+      <p class="font-semibold text-2xl uppercase mb">
+        {{ numberPerMention.deliberation }}
+      </p>
+      <small>élèves admis par délibération</small>
+    </div>
+    <div
+      class="bg-gray-900 rounded-lg shadow-sm shadow-gra me-4 min-w-[24.1%] p-6"
+    >
+      <p class="font-semibold uppercase mb-3">
+        recalé <i class="fa-solid fa-circle-info ml-2"></i>
+      </p>
+      <p class="font-semibold text-2xl uppercase mb">
+        {{ numberPerMention.recale }}
+      </p>
+      <small>élèves recalés</small>
+    </div>
+  </div>
+
+  <div class="flex flex-row justify-between text-white mb-5 bg-gray-900 rounded-lg py-1 px-5">
+    <div class="p-1.5 flex items-center rounded-full px-4 duration-300 cursor-pointer bg-gray-700 text-white">
+      <i class="fa-solid fa-search text-sm" (click)="search(searchInput.value)"></i>
+      <input
+        #searchInput
+        type="text"
+        placeholder="Search"
+        class="text-[15px] ml-4 w-full bg-transparent focus:outline-none"
+      />
+    </div>
+    <div class="">
+      <select class="bg-blue-600 rounded-lg py-2.5 px-4" [(ngModel)]="selectedValue" (change)="onChangeValue($event)">
+        <option  *ngFor="let option of options" [value]="option">{{option}}</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="bg-gray-900 rounded-lg">
+    <app-table-crud [columns]="columns" [data]="data" [actionTemplate]="actionTemplate"></app-table-crud>
+    <ng-template #actionTemplate let-row>
+      <button (click)="downloadPdf(row)" class="py-5 px-6 text-white"><i class="fas fa-download"></i></button>
+    </ng-template>
+  </div>
+</div>

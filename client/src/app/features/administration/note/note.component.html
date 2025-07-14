@@ -1,0 +1,253 @@
+<div [@pageAnimations]="isLoaded ? 'loaded' : ''">
+  <div
+    class="animated-element"
+    class="fixed top-0 bottom-0 lg:left-96 p-2 w-96 overflow-y-auto text-center bg-gray-900"
+  >
+    <div class="text-gray-100 text-xl">
+      <div class="p-3 mt-1 flex items-center cursor-pointer">
+        <h1 class="font-bold text-gray-200 text-[15px] ml-3">Administration</h1>
+      </div>
+      <div class="my-2 bg-gray-600 h-[1px]"></div>
+    </div>
+    <a
+      (click)="addMode()"
+      class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+    >
+      <i class="fa-solid fa-add"></i>
+      <span class="text-[15px] ml-4 text-gray-200 font-bold"
+        >Ajouter une note</span
+      >
+    </a>
+
+    <!-- <div class="my-2 bg-gray-600 h-[1px]"></div> -->
+
+    <div *ngIf="selectedItem">
+      <a
+        (click)="edit()"
+        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+      >
+        <i class="fa-solid fa-edit"></i>
+        <span class="text-[15px] ml-4 text-gray-200 font-bold"
+          >Editer la note</span
+        >
+      </a>
+      <a
+      (click)="deleteItem()"
+        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+      >
+        <i class="fa-solid fa-remove"></i>
+        <span class="text-[15px] ml-4 text-gray-200 font-bold"
+          >Suprimer la note</span
+        >
+      </a>
+    </div>
+    <div class="my-2 bg-gray-600 h-[1px]"></div>
+    <div>
+      <div class="p-2.5 flex items-center rounded-md px-4 my-5 duration-300 cursor-pointer bg-gray-700 text-white">
+        <i class="fa-solid fa-search text-sm" (click)="search(searchInput.value)"></i>
+        <input
+          #searchInput
+          type="text"
+          placeholder="Search"
+          class="text-[15px] ml-4 w-full bg-transparent focus:outline-none"
+        />
+      </div>
+      <div class="flex flex-row w-full items-center justify-center">
+        <i class="fa-solid  fa-chevron-left cursor-pointer duration-300 hover:bg-blue-600 text-white py-2.5 px-4 rounded-l-lg" (click)="previousPage()"></i>
+        <div class="px-4"> <a class="cursor-pointer duration-300 hover:bg-blue-600 text-white px-3 py-1 rounded-full">{{ pagination.current_page }}</a></div>
+        <i class="fa-solid  fa-chevron-right cursor-pointer duration-300 hover:bg-blue-600 text-white py-2.5 px-4 rounded-r-lg" (click)="nextPage()"></i>
+      </div>
+    </div>
+
+    <!-- <div *ngIf="!selectedItem">
+       <p>Aucun élément sélectionné.</p>
+     </div> -->
+  </div>
+
+  <div class="relative animated-element">
+    <div class="absolute right-0 lg:w-[66rem] p-5 h-screen">
+      <div class="flex flex-row text-white">
+        <div
+          class="relative bg-gray-900 rounded-lg shadow-sm shadow-gray-950 me-5 min-w-[49%] p-6"
+        >
+          <p class="font-semibold uppercase mb-3">
+            Notes <i class="fa-solid fa-circle-info ml-2"></i>
+          </p>
+          <p class="font-semibold text-2xl uppercase mb">
+            {{ pagination.total }}
+          </p>
+          <small>notes enregistrée</small>
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg shadow-sm shadow-gray-950 min-w-[49%] p-6"
+        >
+          <p class="font-semibold uppercase mb-3">
+            Nombres <i class="fa-solid fa-circle-info ml-2"></i>
+          </p>
+          <p class="font-semibold text-2xl uppercase mb" *ngIf="selectedItem">
+            {{ selectedItem.nbrNote ?? 0 }}
+          </p>
+          <p class="font-semibold text-2xl uppercase mb" *ngIf="!selectedItem">
+            0
+          </p>
+          <small>notes inscrit pour cet élève</small>
+        </div>
+      </div>
+      <div class="bg-gray-900 rounded-xl shadow-sm shadow-gray-950 my-4">
+        <app-table-crud [columns]="columns" [data]="data"></app-table-crud>
+      </div>
+    </div>
+  </div>
+
+  <div class="animated-element">
+    <div
+      [@slide]="position"
+      class="fixed top-0 bottom-0 lg:-left-64 sm:left-0 py-3 px-10 w-[40rem] overflow-y-auto text-center bg-gray-900 text-white z-0"
+    >
+      <div class="text-gray-100 text-xl">
+        <div class="p-2.5 flex items-center mb-8">
+          <h1 class="font-bold text-gray-200 text-[15px] mx-auto">
+            Ajouter une école
+          </h1>
+          <i
+            class="fa-solid fa-close cursor-pointer p-3"
+            (click)="initForm()"
+          ></i>
+        </div>
+        <div class="my-4 bg-gray-600 h-[1px]"></div>
+      </div>
+
+      <form
+        [formGroup]="noteForm"
+        (ngSubmit)="onSubmit($event)"
+        autoComplete="off"
+        class="w-full max-w-[600px] bg-gray-900 rounded-lg shadow"
+        aria-label="create-ecole"
+      >
+        <div class="flex flex-col items-start mb-5 gap-y-3">
+          <label
+            htmlFor="anneeScolaire"
+            class="text-sm font-medium cursor-pointer"
+          >
+            Années scolaire
+          </label>
+          <input
+            formControlName="anneeScolaire"
+            type="text"
+            id="anneeScolaire"
+            name="anneeScolaire"
+            placeholder="Entrez l'années scolaire ici.'."
+            class="w-full p-4 bg-transparent border border-gray-200 rounded-lg outline-none hover:border-blue-400 focus:border-blue-500 focus:text-blue-500"
+            required
+          />
+          <div
+            *ngIf="
+              anneeScolaire && anneeScolaire.invalid && anneeScolaire.touched
+            "
+            class="text-red-600 text-sm mt-1"
+          >
+            <div *ngIf="anneeScolaire.errors?.['required']">
+              Années scolaire is required.
+            </div>
+            <div *ngIf="anneeScolaire.errors?.['minlength']">
+              Années scolaire must be at least 9 characters long.
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start mb-5 gap-y-3">
+          <label htmlFor="numEleve" class="text-sm font-medium cursor-pointer">
+            Numéro de l'élève
+          </label>
+          <input
+            formControlName="numEleve"
+            type="text"
+            id="numEleve"
+            name="numEleve"
+            placeholder="Entrez le numero de l'élève ici."
+            class="w-full p-4 bg-transparent border border-gray-200 focus:border-blue-500 focus:text-blue-500 rounded-lg outline-none"
+            required
+          />
+          <div
+            *ngIf="numEleve && numEleve.invalid && numEleve.touched"
+            class="text-red-600 text-sm mt-1"
+          >
+            <div *ngIf="numEleve.errors?.['required']">
+              numEleve is required.
+            </div>
+            <div *ngIf="numEleve.errors?.['minlength']">
+              numEleve must be at least 3 characters long.
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start mb-5 gap-y-3">
+          <label htmlFor="numMat" class="text-sm font-medium cursor-pointer">
+            Numéro de la matière
+          </label>
+          <input
+            formControlName="numMat"
+            type="text"
+            id="numMat"
+            name="numMat"
+            placeholder="Entrez le numéro de la matière ici."
+            class="w-full p-4 bg-transparent border border-gray-200 focus:border-blue-500 focus:text-blue-500 rounded-lg outline-none"
+            required
+          />
+          <div
+            *ngIf="numMat && numMat.invalid && numMat.touched"
+            class="text-red-600 text-sm mt-1"
+          >
+            <div *ngIf="numMat.errors?.['required']">numMat is required.</div>
+            <div *ngIf="numMat.errors?.['minlength']">
+              numMat must be at least 3 characters long.
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start mb-5 gap-y-3">
+          <label htmlFor="note" class="text-sm font-medium cursor-pointer">
+            Note
+          </label>
+          <input
+            formControlName="note"
+            type="text"
+            id="note"
+            name="note"
+            placeholder="Entrez la note pour la matière ici."
+            class="w-full p-4 bg-transparent border border-gray-200 focus:border-blue-500 focus:text-blue-500 rounded-lg outline-none"
+            required
+          />
+          <div
+            *ngIf="note && note.invalid && note.touched"
+            class="text-red-600 text-sm mt-1"
+          >
+            <div *ngIf="note.errors?.['required']">note is required.</div>
+            <div *ngIf="note.errors?.['min']">
+              note ne doit pas être négative.
+            </div>
+          </div>
+        </div>
+
+        <div class="my-4 bg-gray-600 h-[1px]"></div>
+
+        <div class="w-full mt-8">
+          <button
+            type="button"
+            (click)="initForm()"
+            class="inline-flex items-center justify-center px-8 w-[49%] me-1 font-sans font-semibold tracking-wide text-white bg-gray-600 hover:bg-gray-700 rounded-lg h-16"
+          >
+            Anuler
+          </button>
+          <button
+            type="submit"
+            [disabled]="noteForm.invalid"
+            class="inline-flex items-center justify-center px-8 w-[49%] ml-1 font-sans font-semibold tracking-wide text-white bg-blue-600 hover:bg-blue-700 disabled:opacity-50 rounded-lg h-16"
+          >
+            Ajouter
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
