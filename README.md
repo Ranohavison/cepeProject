@@ -9,9 +9,9 @@ Display student results with admission status (Admis, Délibéré, Recalé).
 User-friendly interface with search functionality.
 
 Screenshots
-./docs/screenshoot_3.png
-./docs/screenshoot_2.png
-./docs/screenshoot_1.png
+docs/screenshoot_3.png
+docs/screenshoot_2.png
+docs/screenshoot_1.png
 
 Prerequisites
 
